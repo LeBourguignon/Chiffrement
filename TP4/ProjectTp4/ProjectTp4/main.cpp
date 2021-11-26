@@ -1,7 +1,11 @@
 #include <iostream>
+#include "basicEncrypt.h"
 
 int main()
 {
-	std::cout << "Hello World!" << std::endl;
+	tp4::BasicEncrypt basicEncrypt;
+	basicEncrypt.updatePlain(tp4::read("test.txt"));
+	basicEncrypt.encode();
+	tp4::write("test2.txt", basicEncrypt.cypher());
 	return 0;
 }
