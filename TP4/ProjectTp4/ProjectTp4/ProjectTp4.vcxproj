@@ -118,10 +118,12 @@
     <ClCompile Include="basicEncrypt.cpp" />
     <ClCompile Include="encrypt.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="vigenere.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="basicEncrypt.h" />
     <ClInclude Include="encrypt.h" />
+    <ClInclude Include="vigenere.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

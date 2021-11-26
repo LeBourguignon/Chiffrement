@@ -20,8 +20,8 @@ namespace tp4
 		void decode();
 	};
 
-	std::string read(std::string address);
-	void write(std::string address, std::string text);
+	//std::string read(std::string address);
+	//void write(std::string address, std::string text);
 }
 
 /*
