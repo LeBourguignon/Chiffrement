@@ -1,13 +1,10 @@
-#include "basicEncrypt.h"
+#include "encrypt.h"
 
 
-namespace tp4 {
 
-	/*
-		Constructor
-	*/
-
-	BasicEncrypt::BasicEncrypt()
+namespace tp4 
+{
+	Encrypt::Encrypt()
 	{
 
 	}
@@ -16,12 +13,12 @@ namespace tp4 {
 		Getter
 	*/
 
-	std::string BasicEncrypt::plain() const
+	std::string Encrypt::plain() const
 	{
 		return _plain;
 	}
 
-	std::string BasicEncrypt::cypher() const
+	std::string Encrypt::cypher() const
 	{
 		return _cypher;
 	}
@@ -30,28 +27,14 @@ namespace tp4 {
 		Setter
 	*/
 
-	void BasicEncrypt::updatePlain(std::string plain)
+	void Encrypt::updatePlain(std::string plain)
 	{
 		_plain = plain;
 	}
 
-	void BasicEncrypt::updateCypher(std::string cypher)
+	void Encrypt::updateCypher(std::string cypher)
 	{
 		_cypher = cypher;
-	}
-
-	/*
-		Method
-	*/
-
-	void BasicEncrypt::encode()
-	{
-		_cypher = _plain;
-	}
-
-	void BasicEncrypt::decode()
-	{
-		_plain = _cypher;
 	}
 
 	/*
@@ -83,3 +66,4 @@ namespace tp4 {
 			std::cout << "Error: file not created" << std::endl;
 	}
 }
+

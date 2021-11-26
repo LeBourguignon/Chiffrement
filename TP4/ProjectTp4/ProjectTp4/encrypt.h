@@ -3,30 +3,22 @@
 #include <fstream>
 #include <string>
 
-namespace tp4 
-{
-	class BasicEncrypt
+namespace tp4 {
+	class Encrypt
 	{
 	protected:
 		std::string _plain = "", _cypher = "";
 
 	public:
-		BasicEncrypt();
+		Encrypt();
 		std::string plain() const;
 		std::string cypher() const;
 		void updatePlain(std::string plain);
 		void updateCypher(std::string cypher);
-		void encode();
-		void decode();
+		virtual void encode() = 0;
+		virtual void decode() = 0;
 	};
 
 	std::string read(std::string address);
 	void write(std::string address, std::string text);
 }
-
-/*
-	tp4::BasicEncrypt basicEncrypt;
-	basicEncrypt.updatePlain(tp4::read("test.txt"));
-	basicEncrypt.encode();
-	tp4::write("test2.txt", basicEncrypt.cypher());
-*/
