@@ -1,8 +1,10 @@
 #include <iostream>
 
-#include "basicEncrypt.h"
+#include "caesar.h"
+#include "vigenere.h"
 
 int main()
 {
+
 	return 0;
 }

@@ -1,6 +1,5 @@
 #include "basicEncrypt.h"
 
-
 namespace tp4 {
 
 	/*
@@ -66,7 +65,7 @@ namespace tp4 {
 		{
 			std::string line;
 			while (std::getline(file, line))
-				text += line;
+				text += line + " ";
 		}
 		else
 			std::cout << "Error: file not found" << std::endl;

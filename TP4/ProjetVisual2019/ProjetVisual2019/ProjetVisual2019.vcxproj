@@ -139,12 +139,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="basicEncrypt.cpp" />
+    <ClCompile Include="caesar.cpp" />
     <ClCompile Include="encrypt.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="vigenere.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="basicEncrypt.h" />
+    <ClInclude Include="caesar.h" />
     <ClInclude Include="encrypt.h" />
     <ClInclude Include="vigenere.h" />
   </ItemGroup>

@@ -1,6 +1,5 @@
 #pragma once
 #include <array>
-#include <vector>
 #include "encrypt.h"
 
 namespace tp4 {
