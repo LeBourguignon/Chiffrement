@@ -19,7 +19,7 @@ namespace tp4
 }
 
 /*
-	tp4::Caesar caesar(15);
+	tp4::Caesar caesar(3);
 	caesar.updatePlain(tp4::read("test.txt"));
 	std::cout << caesar.plain() << std::endl;
 	caesar.encode();

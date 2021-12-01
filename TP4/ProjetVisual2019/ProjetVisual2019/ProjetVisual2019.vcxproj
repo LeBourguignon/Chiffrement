@@ -140,6 +140,7 @@
   <ItemGroup>
     <ClCompile Include="basicEncrypt.cpp" />
     <ClCompile Include="caesar.cpp" />
+    <ClCompile Include="caesar2.cpp" />
     <ClCompile Include="encrypt.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="vigenere.cpp" />
@@ -147,6 +148,7 @@
   <ItemGroup>
     <ClInclude Include="basicEncrypt.h" />
     <ClInclude Include="caesar.h" />
+    <ClInclude Include="caesar2.h" />
     <ClInclude Include="encrypt.h" />
     <ClInclude Include="vigenere.h" />
   </ItemGroup>
