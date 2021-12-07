@@ -1,8 +1,18 @@
 #include "vigenere.h"
 
-namespace tp4 
+namespace tp4
 {
 	Vigenere::Vigenere(std::vector<int> key) : _key(key) {}
+
+	Vigenere::Vigenere(std::string key)
+	{
+		_key = {};
+		for (char letter : key) {
+			_key.push_back(int(letter));
+			std::cout << letter << " " << int(letter) << std::endl;
+		}
+	}
+
 
 	/*
 		Setter
@@ -11,6 +21,13 @@ namespace tp4
 	void Vigenere::updateKey(std::vector<int> key)
 	{
 		_key = key;
+	}
+
+	void Vigenere::updateKey(std::string key)
+	{
+		_key = {};
+		for (char letter : key)
+			_key.push_back(int(letter));
 	}
 
 	/*
@@ -33,7 +50,7 @@ namespace tp4
 		int k = _key.size();
 		int i = 0;
 		for (char letter : _plain) {
-			char lettre_code = (int(letter) + _key[i]) % 128;
+			char lettre_code = (int(letter) + _key[i]);
 			i = (i + 1) % k;
 			text += lettre_code;
 		}
@@ -48,7 +65,7 @@ namespace tp4
 		int k = _key.size();
 		int i = 0;
 		for (char letter : _cypher) {
-			char lettre_code = (int(letter) - _key[i]) % 128;
+			char lettre_code = (int(letter) - _key[i]);
 			i = (i + 1) % k;
 			text += lettre_code;
 		}

@@ -11,8 +11,10 @@ namespace tp4 {
 
 	public:
 		Vigenere(std::vector<int> key);
+		Vigenere(std::string key);
 		std::vector<int> key() const;
 		void updateKey(std::vector<int> key);
+		void updateKey(std::string key);
 		void encode();
 		void decode();
 
