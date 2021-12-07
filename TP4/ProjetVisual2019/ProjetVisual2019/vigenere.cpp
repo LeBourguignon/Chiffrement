@@ -2,11 +2,7 @@
 
 namespace tp4 
 {
-	Vigenere::Vigenere(std::array<int, 4> key) 
-		: _key(key)
-	{
-
-	}
+	Vigenere::Vigenere(std::array<int, 4> key) : _key(key) {}
 
 	/*
 		Setter
@@ -37,9 +33,9 @@ namespace tp4
 		int k = _key.size();
 		int i = 0;
 		for (char letter : _plain) {
-			int nomb = int(letter) - 65;
-			int nomb_code = (nomb + _key[i]) % 26;
-			char lettre_code = nomb_code + 65;
+			int nomb = int(letter);
+			int nomb_code = (nomb + _key[i]) % 128;
+			char lettre_code = nomb_code;
 			i = (i + 1) % k;
 			text += lettre_code;
 		}
@@ -53,10 +49,10 @@ namespace tp4
 
 		int k = _key.size();
 		int i = 0;
-		for (char letter : _plain) {
-			int nomb = int(letter) - 65;
-			int nomb_code = (nomb - _key[i]) % 26;
-			char lettre_code = nomb_code + 65;
+		for (char letter : _cypher) {
+			int nomb = int(letter);
+			int nomb_code = (nomb - _key[i]) % 128;
+			char lettre_code = nomb_code;
 			i = (i + 1) % k;
 			text += lettre_code;
 		}
