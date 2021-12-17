@@ -23,3 +23,16 @@ namespace tp5
 	std::string read(std::string address);
 	void write(std::string address, std::string text);
 }
+
+/*
+	tp5::Enigma enigma("azertyuiopqsdfghjklmwxcvbn");
+	enigma.updatePlain(tp5::read("test.txt"));
+	std::cout << enigma.plain() << std::endl;
+	enigma.encode();
+	std::cout << enigma.cypher() << std::endl;
+	tp5::write("testEncode.txt", enigma.cypher());
+	enigma.updatePlain(tp5::read("testEncode.txt"));
+	enigma.decode();
+	std::cout << enigma.plain() << std::endl;
+	tp5::write("testDecode.txt", enigma.plain());
+*/
