@@ -9,7 +9,6 @@ namespace tp4
 		_key = {};
 		for (char letter : key) {
 			_key.push_back(int(letter));
-			std::cout << letter << " " << int(letter) << std::endl;
 		}
 	}
 
@@ -73,36 +72,3 @@ namespace tp4
 		_plain = text;
 	}
 }
-
-/*
-std::string out = "";
-
-		for (auto i = 0; i < _key.size(); i++) {
-			if (i != 0) {
-				out += "-";
-			}
-			out += _key[i];
-		}
-
-
-
-*/
-
-/*
-
-	TEST ENCODE DECODE
-
-	auto vig = tp4::Vigenere({ 3,1,5,2 });
-	//vig.updatePlain("CETTE PHRASE NE VEUT RIEN DIRE");
-
-	//vig.encode();
-
-	//std::cout << vig.cypher() << std::endl;
-
-	vig.updateCypher("FFYVHUJUBXGOJYFZVSNGQIKUF");
-
-	vig.decode();
-
-	std::cout << vig.plain() << std::endl;
-
-*/
