@@ -3,7 +3,8 @@
 #include <fstream>
 #include <string>
 
-namespace tp5 {
+namespace tp5 
+{
 	class Encrypt
 	{
 	protected:
