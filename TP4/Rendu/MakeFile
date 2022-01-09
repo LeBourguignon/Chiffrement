@@ -1,13 +1,17 @@
-# Makefile with dependencies management (Q4)
+# Generic Makefile with automatic dependencies management
 
-CXX        = clang++
-CXXFLAGS   = -Wall  -std=c++17
+# Choose your compiler g++/clang++
+CXX        = g++
+CXXFLAGS   = -Wall -Wextra -std=c++11
 DEPFLAGS   = -MMD
 LDFLAGS    =
-SRCS       = $(wildcard *.cpp)
+# Replace your_files.cpp with the list of cpp files that need to be compiled
+# Ex: file1.cpp file2.cpp file3.cpp
+SRCS       = main.cpp basicEncrypt.cpp encrypt.cpp caesar.cpp caesar2.cpp vigenere.cpp
 OBJS       = $(SRCS:.cpp=.o)
+# Replace your_app with the name you want to give to your executable file
 TARGET     = app
-DEPS	   = $(OBJS:.o=.d)
+DEPS       = $(OBJS:.o=.d)
 
 all: $(TARGET)
 
