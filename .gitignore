@@ -354,6 +354,7 @@ MigrationBackup/
 *.lo
 *.o
 *.obj
+*.d
 
 # Precompiled Headers
 *.gch
