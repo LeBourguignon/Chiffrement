@@ -1,4 +1,6 @@
 #pragma once
+#include <vector>
+
 #include "encrypt.h"
 
 namespace tp5
@@ -7,8 +9,7 @@ namespace tp5
 		public Encrypt
 	{
 	protected:
-		std::string _key1;
-		std::string _key2;
+		std::vector <std::string> _keys;
 		std::string const alphabet = "abcdefghijklmnopqrstuvwxyz";
 		int const keySize = 26;
 
@@ -16,9 +17,21 @@ namespace tp5
 		char rotorDecode(std::string key, int counter, char letter);
 
 	public:
-		Enigma(std::string key1 = "abcdefghijklmnopqrstuvwxyz", std::string key2 = "abcdefghijklmnopqrstuvwxyz");
+		Enigma(std::string key1 = "", std::string key2 = "", std::string key3 = "", std::string key4 = "", std::string key5 = "");
 		void encode();
 		void decode();
 
 	};
 }
+
+/*
+	tp5::Enigma encrypt("azertyuiopqsdfghjklmwxcvbn", "abcdefghijklmnopqrstuvwxyz");
+	encrypt.updatePlain(tp5::read("test.txt"));
+	std::cout << "Text : " << encrypt.plain() << std::endl;
+	encrypt.encode();
+	std::cout << "Text encodé : " << encrypt.cypher() << std::endl;
+	tp5::write("testEncode.txt", encrypt.cypher());
+	encrypt.decode();
+	std::cout << "Text décodé : " << encrypt.plain() << std::endl;
+	tp5::write("testDecode.txt", encrypt.cypher());
+*/

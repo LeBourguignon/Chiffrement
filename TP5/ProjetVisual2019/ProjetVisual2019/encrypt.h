@@ -16,8 +16,8 @@ namespace tp5
 		std::string cypher() const;
 		void updatePlain(std::string plain);
 		void updateCypher(std::string cypher);
-		virtual void encode() = 0;
-		virtual void decode() = 0;
+		virtual void encode();
+		virtual void decode();
 	};
 
 	std::string read(std::string address);
@@ -25,14 +25,13 @@ namespace tp5
 }
 
 /*
-	tp5::Enigma enigma("azertyuiopqsdfghjklmwxcvbn");
-	enigma.updatePlain(tp5::read("test.txt"));
-	std::cout << enigma.plain() << std::endl;
-	enigma.encode();
-	std::cout << enigma.cypher() << std::endl;
-	tp5::write("testEncode.txt", enigma.cypher());
-	enigma.updatePlain(tp5::read("testEncode.txt"));
-	enigma.decode();
-	std::cout << enigma.plain() << std::endl;
-	tp5::write("testDecode.txt", enigma.plain());
+	tp5::Encrypt encrypt;
+	encrypt.updatePlain(tp5::read("test.txt"));
+	std::cout << "Text : " << encrypt.plain() << std::endl;
+	encrypt.encode();
+	std::cout << "Text encodé : " << encrypt.cypher() << std::endl;
+	tp5::write("testEncode.txt", encrypt.cypher());
+	encrypt.decode();
+	std::cout << "Text décodé : " << encrypt.plain() << std::endl;
+	tp5::write("testDecode.txt", encrypt.cypher());
 */
