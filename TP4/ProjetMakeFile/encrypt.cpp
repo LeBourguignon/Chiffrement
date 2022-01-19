@@ -36,6 +36,20 @@ namespace tp4
 	}
 
 	/*
+		Methods
+	*/
+
+	void Encrypt::encode()
+	{
+		_cypher = _plain;
+	}
+
+	void Encrypt::decode()
+	{
+		_plain = _cypher;
+	}
+
+	/*
 		Helper
 	*/
 

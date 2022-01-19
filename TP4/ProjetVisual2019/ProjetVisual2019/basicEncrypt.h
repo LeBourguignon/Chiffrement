@@ -25,8 +25,13 @@ namespace tp4
 }
 
 /*
-	tp4::BasicEncrypt basicEncrypt;
-	basicEncrypt.updatePlain(tp4::read("test.txt"));
-	basicEncrypt.encode();
-	tp4::write("test2.txt", basicEncrypt.cypher());
+	tp4::BasicEncrypt encrypt;
+	encrypt.updatePlain(tp4::read("test.txt"));
+	std::cout << "Text : " << encrypt.plain() << std::endl;
+	encrypt.encode();
+	std::cout << "Text encodé : " << encrypt.cypher() << std::endl;
+	tp4::write("testEncode.txt", encrypt.cypher());
+	encrypt.decode();
+	std::cout << "Text décodé : " << encrypt.plain() << std::endl;
+	tp4::write("testDecode.txt", encrypt.cypher());
 */

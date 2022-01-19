@@ -19,14 +19,13 @@ namespace tp4
 }
 
 /*
-	tp4::Caesar caesar(3);
-	caesar.updatePlain(tp4::read("test.txt"));
-	std::cout << caesar.plain() << std::endl;
-	caesar.encode();
-	std::cout << caesar.cypher() << std::endl;
-	tp4::write("testEncode.txt", caesar.cypher());
-	caesar.updatePlain(tp4::read("testEncode.txt"));
-	caesar.decode();
-	std::cout << caesar.plain() << std::endl;
-	tp4::write("testDecode.txt", caesar.plain());
+	tp4::Caesar encrypt(3);
+	encrypt.updatePlain(tp4::read("test.txt"));
+	std::cout << "Text : " << encrypt.plain() << std::endl;
+	encrypt.encode();
+	std::cout << "Text encodé : " << encrypt.cypher() << std::endl;
+	tp4::write("testEncode.txt", encrypt.cypher());
+	encrypt.decode();
+	std::cout << "Text décodé : " << encrypt.plain() << std::endl;
+	tp4::write("testDecode.txt", encrypt.cypher());
 */
