@@ -15,36 +15,6 @@ En binome, vous devez choisir 2 TP parmi ces 6 TPs en fonction de votre niveau :
 
 A l'issue des TPs, vous enverrez le code source des 2 TPs réalisés à l'enseignant de cours, en respectant les consignes qui vous auront été transmises.
 
-## TP1
-
-**Niveau du TP: Débutant**
-
-Le [TP1](TP1.md) concerne la gestion d’une bibliothèque. Cette bibliothèque comporte des livres qui peuvent être empruntés par des lecteurs en respectant la règle suivante : « Un Livre peut être emprunté par un seul Lecteur à un instant donné et doit donc être rendu à la bibliothèque par ce Lecteur avant d’être à nouveau emprunté par le même lecteur ou par un autre lecteur ».
-Ce TP permet d'aborder la programmation orientée objets (POO) en créant un certain nombre de classes simples qui vont intéragir entre elles. Ce TP est donc adapté aux étudiants débutant la POO en C++.
-
-
-## TP2
-
-**Niveau du TP: Débutant**
-
-Le [TP2](TP2.md) a pour objectif de concevoir une application de gestion des réservations d'un hôtel.
-
-Ce TP permet d'aborder la programmation orientée objets (POO) en créant un certain nombre de classes simples qui vont intéragir entre elles. 
-
-Ce TP est donc adapté aux étudiants débutant la POO en C++.
-
-
-## TP3
-
-**Niveau du TP: Intermédiaire**
-
-Le [TP3](TP3.md) consiste à concevoir une application de magasin en ligne nommé EasyStore. 
-
-Ce TP permet d'aborder la programmation orientée objets (POO) en créant un certain nombre de classes simples qui vont intéragir entre elles. 
-
-Ce TP est donc adapté aux étudiants ayant un niveau intermédiaire en C++.
-
-
 ## TP4
 
 **Niveau du TP: intermédiaire**
@@ -65,16 +35,6 @@ Ce TP permet de renforcer vos compétences en programmation orientée objets (PO
 
 Ce TP est donc adapté aux étudiants ayant un niveau intermédiaire à élevé..
 
+# Compte Rendu
 
-## TP6
-
-**Niveau du TP: intermédiaire à elevé**
-
-Le [TP6](TP6.md) a pour objectif d'implémenter un générateur / solveur de grilles de Sudoku.
-
-Ce TP permet de renforcer vos compétences en programmation orientée objets (POO) en manipulant des classes et en faisant des traitements récursifs.
-
-Ce TP est donc adapté aux étudiants ayant un niveau intermédiaire à élevé..
-
-
-
+Nous pouvons retrouver un compte rendu des TPs réalisés dans ce [document](compte_rendu.pdf)
