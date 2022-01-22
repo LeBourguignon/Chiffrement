@@ -2,7 +2,7 @@
  
 [github.md](../../utils/github.md) est un tutorial en français expliquant comment utiliser git/github à 2 développeurs.
 
-# Liste des TP
+# Enoncé des TP
 
 **Lire attentivement les informations suivantes**
 
