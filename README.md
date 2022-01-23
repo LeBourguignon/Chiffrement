@@ -1,3 +1,5 @@
+TPs réalisés lors des cours du premier semestre en 3A IT à Esirem par Baptiste Andres et Guillaume Imhoff.
+
 # Tutorial git/GitHub
  
 [github.md](../../utils/github.md) est un tutorial en français expliquant comment utiliser git/github à 2 développeurs.
